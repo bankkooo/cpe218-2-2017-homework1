@@ -3,20 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package homework1;
+//package Homework1;
 
 /**
  *
  * @author User
  */
 public class Node {
-    String data;
-    //boolean root=false;
     Node left;
     Node right;
+    char data;
     Node parent;
-    
-    public Node(String a){
-        this.data=a;
+
+    public Node(char n){
+        data=n;
+    }
+    public Node(){
+
     }
 }
