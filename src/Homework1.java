@@ -1,16 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-//package Homework1;
 
-/**
- *
- * @author User
- */
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 import java.util.Stack;
-public class Homework1 {
+
+
+public class Treegui{
 
     /**
      * @param args the command line arguments
@@ -19,7 +13,8 @@ public class Homework1 {
     static Stack datastack= new Stack();
     static int sum=0 ;
     static Stack calstack = new Stack();
-    static public class Node {
+
+    public static class Node {
         Node left;
         Node right;
         char data;
@@ -33,11 +28,12 @@ public class Homework1 {
         }
     }
 
+    public static Node inor=new Node();
     public static void main(String[] args) {
         input = args[0];
         //String input = "251-*32*+";
         //sum=9;
-        Node inor=new Node();
+
         int i;
         for( i=0;i<input.length();i++){
             inor=inorder(new Node(input.charAt(i)));
@@ -45,6 +41,7 @@ public class Homework1 {
         }
         infix(inor);
         System.out.println("="+sum);
+        GUI.main(args);
 
 
     }
@@ -132,3 +129,6 @@ public class Homework1 {
     }
 
 }
+
+
+
