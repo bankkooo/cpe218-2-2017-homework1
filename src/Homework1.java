@@ -4,7 +4,7 @@
 import java.util.Stack;
 
 
-public class Treegui{
+public class Homework1{
 
     /**
      * @param args the command line arguments
@@ -14,7 +14,7 @@ public class Treegui{
     static int sum=0 ;
     static Stack calstack = new Stack();
 
-    public static class Node {
+    /*public static class Node {
         Node left;
         Node right;
         char data;
@@ -26,7 +26,7 @@ public class Treegui{
         public Node(){
 
         }
-    }
+    }*/
 
     public static Node inor=new Node();
     public static void main(String[] args) {
